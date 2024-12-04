@@ -8,6 +8,8 @@ import {
 } from 'node-notifier';
 import {Notification} from 'node-notifier/notifiers/notificationcenter';
 
+export {findRaycastNotificationCenterPath} from './utils.js';
+
 export type {Option as NotifierOptions} from 'node-notifier';
 export type NotifyOptions = Omit<Notification, 'reply'> & {
 	reply?: boolean | string | undefined;

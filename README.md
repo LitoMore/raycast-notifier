@@ -75,6 +75,31 @@ Type: `NotifierOptions`
 
 Optional. Options for `node-notifier`'s [`new NotificationCenter(notifierOptions)`](https://www.npmjs.com/package/node-notifier#all-notification-options-with-their-defaults).
 
+### findRaycastNotificationCenterPath()
+
+This method can be used to find the installed Notification Center from [Raycast Notification](https://raycast.com/maxnyby/raycast-notification).
+
+Returns a `Promise<string | undefined>`.
+
+```typescript
+import { open } from "@raycast/api";
+import {
+	findRaycastNotificationCenterPath,
+	notificationCenter,
+} from "raycast-notifier";
+
+const found = await findRaycastNotificationCenterPath();
+
+// ... You can lead user to the installation page if not found
+open("raycast://extensions/maxnyby/raycast-notification");
+
+notificationCenter(
+	notifyOptions,
+	// `undefined` here means use the its own Notification Center
+	{ customPath: found },
+);
+```
+
 ## FAQ
 
 ### 1. Not working on Apple Silicon
