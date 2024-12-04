@@ -93,11 +93,7 @@ const found = await findRaycastNotificationCenterPath();
 // ... You can lead user to the installation page if not found
 open("raycast://extensions/maxnyby/raycast-notification");
 
-notificationCenter(
-	notifyOptions,
-	// `undefined` here means use the its own Notification Center
-	{ customPath: found },
-);
+notificationCenter(notifyOptions, { customPath: found });
 ```
 
 ## FAQ
