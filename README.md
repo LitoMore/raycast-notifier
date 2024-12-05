@@ -109,6 +109,9 @@ This is a upstream issue from [terminal-notifier](https://github.com/julienXX/te
 ## Related
 
 - [node-notifier](https://github.com/mikaelbr/node-notifier) - Send cross platform native notifications using Node.js
+- [terminal-notifier](https://github.com/julienXX/terminal-notifier) - The command-line tool to send macOS User Notifications
+- [raycast-corss-extension](https://github.com/LitoMore/raycast-cross-extension-conventions) - Defines the development approach for cross-extension in Raycast
+- [raycast-hid](https://github.com/LitoMore/raycast-hid) - Access USB & Bluetooth HID devices through Node.js
 
 ## License
 
